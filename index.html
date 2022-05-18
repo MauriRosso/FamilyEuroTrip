@@ -18,8 +18,15 @@
         #header {
             padding: 0px;
             height: 297px;
-            width:100%;
-            margin-left:5px
+            width: 100%;
+            margin-left: 5px;
+        }
+        .bgdesktop {
+            background-image: url(https://i.imgur.com/MhxERNz.png);
+        }
+        .bgmobile {
+            background-image: url(https://i.imgur.com/nGokJa9.png);
+            width:500px;
         }
 
         #box-under-header {
@@ -285,9 +292,9 @@
     </style>
 </head>
 <body>
-    <div id="header" style="background-image: url(https://i.imgur.com/MhxERNz.png); background-size:cover ">
+    <div id="header"> 
         <div class="row text-center">
-            <h1 style="text-shadow: 2px 2px #FFCC00;"><b>FAMILY EUROTRIP</b></h1>
+            <h1 id="titulo-eurotrip" style="text-shadow: 2px 2px #FFCC00;"><b>FAMILY EUROTRIP</b></h1>
             <h4><b>Cronograma de viaje</b></h4>
         </div>
     </div>
@@ -360,7 +367,17 @@
         </div>
     </div>
 </body>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        $('#header').removeClass('bgdesktop').addClass('bgmobile');
+        $('#header').css({ 'background-repeat': 'no-repeat' });
+        $('#header').css({ 'background-size': 'contain' });
+        $('#box-under-header').css({ 'margin-top': '-177px' });
+        $('#box-under-header').css({ 'width': '1500px' });
+        $('#titulo-eurotrip').css({ 'margin-top': '130px' });
+    } else {
+        $('#header').removeClass('bgmobile').addClass('bgdesktop');
+    }
 </script>
 </html>
