@@ -9,34 +9,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="icon" href="http://example.com/favicon.png">
+    <link rel="icon" href="https://banderasysoportes.com/xen_media/europa-horiz.jpg">
     <style>
         body {
             background-color: #ddd;
+            overflow-x: hidden;
         }
 
         #header {
+            height:450px;
             padding: 0px;
-            height: 297px;
-            width: 100%;
-            margin-left: 5px;
+            margin:0px;
         }
         .bgdesktop {
-            background-image: url(https://i.imgur.com/MhxERNz.png);
+            background-image: url(https://i.imgur.com/QupYCWD.png);
         }
         .bgmobile {
-            background-image: url(https://i.imgur.com/nGokJa9.png);
-            width:500px;
+            background-image: url(https://i.imgur.com/QupYCWD.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
 
         #box-under-header {
-            background: #CEF5F9;
-            background: -webkit-linear-gradient(top, #CEF5F9, #DDDDDD);
-            background: -moz-linear-gradient(top, #CEF5F9, #DDDDDD);
-            background: linear-gradient(to bottom, #CEF5F9, #DDDDDD);
+            background: #128ba6;
+            /*background: -webkit-linear-gradient(top, #128ba6, #DDDDDD);
+            background: -moz-linear-gradient(top, #128ba6, #DDDDDD);
+            background: linear-gradient(to bottom, #128ba6, #DDDDDD);*/
             padding: 0px;
             height: 100px;
-            margin:0px;
+            box-shadow: 0 8px 6px rgba(0, 0, 0, 0.7);
+            margin-top: -2px;
         }
 
         .main-timeline {
@@ -87,6 +90,11 @@
                     border-radius: 3px;
                     transform: rotate(45deg);
                     right: 20px;
+                }
+
+                .timeline-less:after{
+                    background-color: #ddd;
+
                 }
 
             .main-timeline .timeline-content {
@@ -197,52 +205,67 @@
                     margin: 20px 20px 0 80px;
                 }
 
-            .main-timeline .timeline:nth-child(4n+2):before {
-                background: linear-gradient(to right, black,black,#FDDA24,#FDDA24,#EF3340, #EF3340);
+            /*DIA 1*/
+            .main-timeline .timeline:nth-child(4n+2):before { /*Punto sobre la linea*/
+                background: linear-gradient(to right, #0072BB,#0072BB,#fff,#fff, #ED2939,#ED2939);
             }
 
-            .main-timeline .timeline:nth-child(4n+2):after {
+            .main-timeline .timeline:nth-child(4n+2):after { /*Flecha hacia el punto*/
                 background-color: black;
             }
 
-            .main-timeline .timeline:nth-child(4n+2) .timeline-content {
-                background: white
-            }
-
-            .main-timeline .timeline:nth-child(4n+2) .title {
-                color: #4EB543;
-            }
-
+            /*DIA 2*/
             .main-timeline .timeline:nth-child(4n+3):before {
-                background: linear-gradient(to bottom, #C8102E,#C8102E, #FFF, #FFF, #324CA4,#324CA4);
+                background: linear-gradient(to right, #0072BB,#0072BB,#fff,#fff, #ED2939,#ED2939);
             }
 
             .main-timeline .timeline:nth-child(4n+3):after {
                 background-color: black;
             }
 
-            .main-timeline .timeline:nth-child(4n+3) .timeline-content {
-                background: white
-            }
-
-            .main-timeline .timeline:nth-child(4n+3) .title {
-                color: #3A3270;
-            }
-
+            /*DIA 3*/
             .main-timeline .timeline:nth-child(4n+4):before {
-                background: linear-gradient(to bottom, #000000,#000000,#DD0000,#DD0000, #FFCC00,#FFCC00);
+                background: linear-gradient(to right, #0072BB,#0072BB,#fff,#fff, #ED2939,#ED2939);
             }
 
             .main-timeline .timeline:nth-child(4n+4):after {
                 background-color: black;
             }
 
-            .main-timeline .timeline:nth-child(4n+4) .timeline-content {
-                background: white
+            /*DIA 4*/
+            .main-timeline .timeline:nth-child(4n+5):before {
+                background: linear-gradient(to right, #0072BB,#0072BB,#fff,#fff, #ED2939,#ED2939);
             }
 
-            .main-timeline .timeline:nth-child(4n+4) .title {
-                color: #0A2C80;
+            .main-timeline .timeline:nth-child(4n+5):after {
+                background-color: black;
+            }
+
+            /*DIA 5*/
+            .main-timeline .timeline:nth-child(4n+6):before {
+                background: linear-gradient(to right, black,black,#FDDA24,#FDDA24,#EF3340, #EF3340);
+            }
+
+            .main-timeline .timeline:nth-child(4n+6):after {
+                background-color: black;
+            }
+
+            /*DIA 6*/
+            .main-timeline .timeline:nth-child(4n+7):before {
+                background: linear-gradient(to right, black,black,#FDDA24,#FDDA24,#EF3340, #EF3340);
+            }
+
+            .main-timeline .timeline:nth-child(4n+7):after {
+                background-color: black;
+            }
+
+            /*DIA 7*/
+            .main-timeline .timeline:nth-child(4n+8):before {
+                background: linear-gradient(to bottom, #C8102E,#C8102E, #FFF, #FFF, #324CA4,#324CA4);
+            }
+
+            .main-timeline .timeline:nth-child(4n+8):after {
+                background-color: black;
             }
 
         @media screen and (max-width:767px) {
@@ -292,11 +315,11 @@
     </style>
 </head>
 <body>
-    <div id="header"> 
+    <div id="header">
         <div class="row text-center">
-            <h1 id="titulo-eurotrip" style="text-shadow: 2px 2px #FFCC00;"><b>FAMILY EUROTRIP</b></h1>
-            <h4><b>Cronograma de viaje</b></h4>
-        </div>
+            <h1 id="titulo-eurotrip" style="text-shadow: 2px 2px #128ba6; color:white; margin-top:40px;"><b>FAMILY EUROTRIP</b></h1>
+            <h4 id="subtitulo-eurotrip" style="text-shadow: 2px 2px white; color:black"><b>Cronograma de viaje</b></h4>
+        </div>        
     </div>
     <div id="box-under-header"></div>
     <div class="demo">
@@ -304,10 +327,42 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="main-timeline">
+                        <div id="tarjeta-inicio" class="timeline" style="border-right:0px; margin-top:-130px; margin-bottom:13px;">
+                            <a class="timeline-content">
+                                <!--<div class="timeline-icon"><i class="fa fa-globe"></i></div>-->
+                                <h3 class="title-alemania">INICIO <br /><sub>5 de agosto</sub></h3>
+                                <div style="text-align:center; padding:13px">
+                                    <i class="fa-solid fa-plane-departure"></i>
+                                    <p class="description" style="text-align:center; display:inline">
+                                        PARTIMOS DESDE FRANKFURT, ALEMANIA
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="timeline" style="border-top-left-radius:0px">
+                            <a class="timeline-content">
+                                <!--<div class="timeline-icon"><i class="fa fa-globe"></i></div>-->
+                                <h3 class="title-francia">D&#205;A 1 <br /><sub>6 de agosto</sub></h3>
+                                <p class="description">
+                                    > Museo Louvre. <br />
+                                    > Torre Eiffel. <br />
+                                    > Arco del Triunfo. <br />
+                                    > Museo Louvre. <br />
+                                    > Torre Eiffel. <br />
+                                    > Arco del Triunfo. <br />
+                                    > Museo Louvre. <br />
+                                    > Torre Eiffel. <br />
+                                    > Arco del Triunfo.
+                                </p>
+                                <div style="margin-top:15px; margin-left:15px; text-align:left;">
+                                    <i class="fa-solid fa-location-dot"></i><p style="display:inline; margin-left:8px">Par&iacute;s, Francia</p>
+                                </div>
+                            </a>
+                        </div>
                         <div class="timeline">
                             <a class="timeline-content">
                                 <!--<div class="timeline-icon"><i class="fa fa-globe"></i></div>-->
-                                <h3 class="title-francia">DIA 1 <br /><sub>6 de agosto</sub></h3>
+                                <h3 class="title-francia">D&#205;A 2 <br /><sub>7 de agosto</sub></h3>
                                 <p class="description">
                                     > Museo Louvre. <br />
                                     > Torre Eiffel. <br />
@@ -320,7 +375,7 @@
                                     > Arco del Triunfo.
                                 </p>
                                 <div style="margin-top:15px; margin-right:15px; text-align:right;">
-                                    <i class="fa-solid fa-location-dot"></i><p style="display:inline; margin-left:8px">París, Francia</p>
+                                    <i class="fa-solid fa-location-dot"></i><p style="display:inline; margin-left:8px">Par&iacute;s, Francia</p>
 
                                 </div>
                             </a>
@@ -328,7 +383,7 @@
                         <div class="timeline">
                             <a href="#" class="timeline-content">
                                 <div class="timeline-icon"><i class="fa fa-rocket"></i></div>
-                                <h3 class="title-belgica">DIA 2 <br /> <sub>7 de agosto</sub></h3>
+                                <h3 class="title-francia">D&#205;A 3 <br /> <sub>8 de agosto</sub></h3>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
                                 </p>
@@ -337,7 +392,7 @@
                         <div class="timeline">
                             <a href="#" class="timeline-content">
                                 <div class="timeline-icon"><i class="fa fa-user"></i></div>
-                                <h3 class="title-holanda">DIA 4 <br /> <sub>8 de agosto</sub></h3>
+                                <h3 class="title-francia">D&#205;A 4 <br /> <sub>9 de agosto</sub></h3>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
                                 </p>
@@ -346,7 +401,7 @@
                         <div class="timeline">
                             <a href="#" class="timeline-content">
                                 <div class="timeline-icon"><i class="fa fa-briefcase"></i></div>
-                                <h3 class="title-alemania">DIA 6 <br /> <sub>11 de agosto</sub></h3>
+                                <h3 class="title-belgica">D&#205;A 5 <br /> <sub>10 de agosto</sub></h3>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
                                 </p>
@@ -355,7 +410,16 @@
                         <div class="timeline">
                             <a href="#" class="timeline-content">
                                 <div class="timeline-icon"><i class="fa fa-user"></i></div>
-                                <h3 class="title-holanda">DIA 8 <br /> <sub>13 de agosto</sub></h3>
+                                <h3 class="title-belgica">D&#205;A 6 <br /> <sub>11 de agosto</sub></h3>
+                                <p class="description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                                </p>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="#" class="timeline-content">
+                                <div class="timeline-icon"><i class="fa fa-user"></i></div>
+                                <h3 class="title-holanda">D&#205;A 7 <br /> <sub>12 de agosto</sub></h3>
                                 <p class="description">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
                                 </p>
@@ -369,13 +433,16 @@
 </body>  
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
+    $("#tarjeta-inicio").removeClass('timeline');
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $('#header').removeClass('bgdesktop').addClass('bgmobile');
-        $('#header').css({ 'background-repeat': 'no-repeat' });
-        $('#header').css({ 'background-size': 'contain' });
-        $('#box-under-header').css({ 'margin-top': '-177px' });
-        $('#box-under-header').css({ 'width': '1500px' });
-        $('#titulo-eurotrip').css({ 'margin-top': '130px' });
+        $('#header').css({ 'height': '200px' });
+        //$('#header').css({ 'background-size': 'contain' });
+        //$('#box-under-header').css({ 'margin-top': '-177px' });
+        //$('#box-under-header').css({ 'width': '1500px' });
+        $('#titulo-eurotrip').css({ 'margin-top': '7px' });
+        $('#titulo-eurotrip').css({ 'font-size': '23px' });
+        $('#subtitulo-eurotrip').css({ 'font-size': '15px' });
     } else {
         $('#header').removeClass('bgmobile').addClass('bgdesktop');
     }
