@@ -17,13 +17,15 @@
         }
 
         #header {
-            height:450px;
+            height: 450px;
             padding: 0px;
-            margin:0px;
+            margin: 0px;
         }
+
         .bgdesktop {
             background-image: url(https://i.imgur.com/QupYCWD.png);
         }
+
         .bgmobile {
             background-image: url(https://i.imgur.com/QupYCWD.png);
             background-position: center;
@@ -92,181 +94,262 @@
                     right: 20px;
                 }
 
-                .timeline-less:after{
-                    background-color: #ddd;
+        .timeline-less:after {
+            background-color: #ddd;
+        }
 
-                }
+        .main-timeline .timeline-content {
+            color: black;
+            background: white;
+            min-height: 130px;
+            padding: 0 0 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            border-radius: 20px;
+            display: block;
+            overflow: hidden;
+            position: relative;
+            z-index: 1;
+        }
 
-            .main-timeline .timeline-content {
-                color: black;
-                background: white;
-                min-height: 130px;
-                padding: 0 0 20px;
-                box-shadow: 0 0 10px rgba(0,0,0,0.3);
-                border-radius: 20px;
-                display: block;
-                overflow: hidden;
-                position: relative;
-                z-index: 1;
+            .main-timeline .timeline-content:hover {
+                text-decoration: none;
             }
 
-                .main-timeline .timeline-content:hover {
-                    text-decoration: none;
-                }
+        .main-timeline .timeline-icon {
+            font-size: 40px;
+            line-height: 40px;
+            position: absolute;
+            bottom: 15px;
+            right: 16px;
+        }
 
-            .main-timeline .timeline-icon {
-                font-size: 40px;
-                line-height: 40px;
-                position: absolute;
-                bottom: 15px;
-                right: 16px;
+        .main-timeline .title-francia {
+            color: black;
+            background: linear-gradient(to right, #0072BB,#0072BB,#fff,#fff, #ED2939,#ED2939);
+            font-size: 21px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 12px;
+            margin: 0 0 5px;
+        }
+
+        .main-timeline .title-belgica {
+            color: black;
+            background: linear-gradient(to right, black,black,#FDDA24,#FDDA24,#EF3340, #EF3340);
+            font-size: 21px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 12px;
+            margin: 0 0 5px;
+        }
+
+        .main-timeline .title-holanda {
+            color: black;
+            background: linear-gradient(to bottom, #C8102E,#C8102E, #FFF, #FFF, #324CA4,#324CA4);
+            font-size: 21px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 12px;
+            margin: 0 0 5px;
+        }
+        .main-timeline .title-repcheca {
+            color: black;
+            background: linear-gradient(146deg, #11457E 25%, transparent 15%) 0 -35px, linear-gradient(34deg, #11457E 25%, transparent 15%) 0 -35px, linear-gradient(to bottom, white 50%, #D7141A 50%);
+            font-size: 21px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 12px;
+            margin: 0 0 5px;
+        }
+
+        .main-timeline .title-alemania {
+            color: white;
+            background: linear-gradient(to bottom, #000000,#000000,#DD0000,#DD0000, #FFCC00,#FFCC00);
+            font-size: 21px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 12px;
+            margin: 0 0 5px;
+        }
+
+        .main-timeline .description {
+            font-size: 14px;
+            font-weight: 400;
+            /*letter-spacing: 1px;*/
+            line-height: 20px;
+            margin: 20px 20px 0 20px;
+        }
+
+        .main-timeline .timeline:nth-child(even) {
+            float: right;
+            padding: 20px 0 20px 30px;
+            margin: -20px 0 0 0;
+            border-right: none;
+            border-left: 10px solid #fff;
+        }
+
+            .main-timeline .timeline:nth-child(even):before {
+                right: auto;
+                left: -18px;
             }
 
-            .main-timeline .title-francia {
-                color: black;
-                background: linear-gradient(to right, #0072BB,#0072BB,#fff,#fff, #ED2939,#ED2939);
-                font-size: 21px;
-                font-weight: 600;
-                letter-spacing: 0.5px;
-                text-align: center;
-                text-transform: uppercase;
-                padding: 12px;
-                margin: 0 0 5px;
+            .main-timeline .timeline:nth-child(even):after {
+                right: auto;
+                left: 20px;
             }
 
-            .main-timeline .title-belgica {
-                color: black;
-                background: linear-gradient(to right, black,black,#FDDA24,#FDDA24,#EF3340, #EF3340);
-                font-size: 21px;
-                font-weight: 600;
-                letter-spacing: 0.5px;
-                text-align: center;
-                text-transform: uppercase;
-                padding: 12px;
-                margin: 0 0 5px;
+            .main-timeline .timeline:nth-child(even) .timeline-icon {
+                right: auto;
+                left: 16px;
             }
 
-            .main-timeline .title-holanda {
-                color: black;
-                background: linear-gradient(to bottom, #C8102E,#C8102E, #FFF, #FFF, #324CA4,#324CA4);
-                font-size: 21px;
-                font-weight: 600;
-                letter-spacing: 0.5px;
-                text-align: center;
-                text-transform: uppercase;
-                padding: 12px;
-                margin: 0 0 5px;
-            }
-
-            .main-timeline .title-alemania {
-                color: white;
-                background: linear-gradient(to bottom, #000000,#000000,#DD0000,#DD0000, #FFCC00,#FFCC00);
-                font-size: 21px;
-                font-weight: 600;
-                letter-spacing: 0.5px;
-                text-align: center;
-                text-transform: uppercase;
-                padding: 12px;
-                margin: 0 0 5px;
-            }
-
-            .main-timeline .description {
-                font-size: 14px;
-                font-weight: 400;
-                /*letter-spacing: 1px;*/
-                line-height: 20px;
+            .main-timeline .timeline:nth-child(even) .description {
                 margin: 20px 20px 0 20px;
             }
 
-            .main-timeline .timeline:nth-child(even) {
-                float: right;
-                padding: 20px 0 20px 30px;
-                margin: -20px 0 0 0;
-                border-right: none;
-                border-left: 10px solid #fff;
-            }
+        /*DIA 1*/
+        .main-timeline .timeline:nth-child(4n+2):before { /*Punto sobre la linea*/
+            background: linear-gradient(to right, #0072BB,#0072BB,#fff,#fff, #ED2939,#ED2939);
+        }
 
-                .main-timeline .timeline:nth-child(even):before {
-                    right: auto;
-                    left: -18px;
-                }
+        .main-timeline .timeline:nth-child(4n+2):after { /*Flecha hacia el punto*/
+            background-color: black;
+        }
 
-                .main-timeline .timeline:nth-child(even):after {
-                    right: auto;
-                    left: 20px;
-                }
+        /*DIA 2*/
+        .main-timeline .timeline:nth-child(4n+3):before {
+            background: linear-gradient(to right, #0072BB,#0072BB,#fff,#fff, #ED2939,#ED2939);
+        }
 
-                .main-timeline .timeline:nth-child(even) .timeline-icon {
-                    right: auto;
-                    left: 16px;
-                }
+        .main-timeline .timeline:nth-child(4n+3):after {
+            background-color: black;
+        }
 
-                .main-timeline .timeline:nth-child(even) .description {
-                    margin: 20px 20px 0 20px;
-                }
+        /*DIA 3*/
+        .main-timeline .timeline:nth-child(4n+4):before {
+            background: linear-gradient(to right, #0072BB,#0072BB,#fff,#fff, #ED2939,#ED2939);
+        }
 
-            /*DIA 1*/
-            .main-timeline .timeline:nth-child(4n+2):before { /*Punto sobre la linea*/
-                background: linear-gradient(to right, #0072BB,#0072BB,#fff,#fff, #ED2939,#ED2939);
-            }
+        .main-timeline .timeline:nth-child(4n+4):after {
+            background-color: black;
+        }
 
-            .main-timeline .timeline:nth-child(4n+2):after { /*Flecha hacia el punto*/
-                background-color: black;
-            }
+        /*DIA 4*/
+        .main-timeline .timeline:nth-child(4n+5):before {
+            background: linear-gradient(to right, #0072BB,#0072BB,#fff,#fff, #ED2939,#ED2939);
+        }
 
-            /*DIA 2*/
-            .main-timeline .timeline:nth-child(4n+3):before {
-                background: linear-gradient(to right, #0072BB,#0072BB,#fff,#fff, #ED2939,#ED2939);
-            }
+        .main-timeline .timeline:nth-child(4n+5):after {
+            background-color: black;
+        }
 
-            .main-timeline .timeline:nth-child(4n+3):after {
-                background-color: black;
-            }
+        /*DIA 5*/
+        .main-timeline .timeline:nth-child(4n+6):before {
+            background: linear-gradient(to right, black,black,#FDDA24,#FDDA24,#EF3340, #EF3340);
+        }
 
-            /*DIA 3*/
-            .main-timeline .timeline:nth-child(4n+4):before {
-                background: linear-gradient(to right, #0072BB,#0072BB,#fff,#fff, #ED2939,#ED2939);
-            }
+        .main-timeline .timeline:nth-child(4n+6):after {
+            background-color: black;
+        }
 
-            .main-timeline .timeline:nth-child(4n+4):after {
-                background-color: black;
-            }
+        /*DIA 6*/
+        .main-timeline .timeline:nth-child(4n+7):before {
+            background: linear-gradient(to right, black,black,#FDDA24,#FDDA24,#EF3340, #EF3340);
+        }
 
-            /*DIA 4*/
-            .main-timeline .timeline:nth-child(4n+5):before {
-                background: linear-gradient(to right, #0072BB,#0072BB,#fff,#fff, #ED2939,#ED2939);
-            }
+        .main-timeline .timeline:nth-child(4n+7):after {
+            background-color: black;
+        }
 
-            .main-timeline .timeline:nth-child(4n+5):after {
-                background-color: black;
-            }
+        /*DIA 7*/
+        .main-timeline .timeline:nth-child(4n+8):before {
+            background: linear-gradient(to bottom, #C8102E,#C8102E, #FFF, #FFF, #324CA4,#324CA4);
+        }
 
-            /*DIA 5*/
-            .main-timeline .timeline:nth-child(4n+6):before {
-                background: linear-gradient(to right, black,black,#FDDA24,#FDDA24,#EF3340, #EF3340);
-            }
+        .main-timeline .timeline:nth-child(4n+8):after {
+            background-color: black;
+        }
 
-            .main-timeline .timeline:nth-child(4n+6):after {
-                background-color: black;
-            }
+        /*DIA 8*/
+        .main-timeline .timeline:nth-child(4n+9):before {
+            background: linear-gradient(to bottom, #C8102E,#C8102E, #FFF, #FFF, #324CA4,#324CA4);
+        }
 
-            /*DIA 6*/
-            .main-timeline .timeline:nth-child(4n+7):before {
-                background: linear-gradient(to right, black,black,#FDDA24,#FDDA24,#EF3340, #EF3340);
-            }
+        .main-timeline .timeline:nth-child(4n+9):after {
+            background-color: black;
+        }
 
-            .main-timeline .timeline:nth-child(4n+7):after {
-                background-color: black;
-            }
+        /*DIA 9*/
+        .main-timeline .timeline:nth-child(4n+10):before {
+            background: linear-gradient(to bottom, #000000,#000000,#DD0000,#DD0000, #FFCC00,#FFCC00);
+        }
 
-            /*DIA 7*/
-            .main-timeline .timeline:nth-child(4n+8):before {
-                background: linear-gradient(to bottom, #C8102E,#C8102E, #FFF, #FFF, #324CA4,#324CA4);
-            }
+        .main-timeline .timeline:nth-child(4n+10):after {
+            background-color: black;
+        }
+        /*DIA 10*/
+        .main-timeline .timeline:nth-child(4n+11):before {
+            background: linear-gradient(to bottom, #000000,#000000,#DD0000,#DD0000, #FFCC00,#FFCC00);
+        }
 
-            .main-timeline .timeline:nth-child(4n+8):after {
-                background-color: black;
-            }
+        .main-timeline .timeline:nth-child(4n+11):after {
+            background-color: black;
+        }
+
+        /*DIA 11*/
+        .main-timeline .timeline:nth-child(4n+12):before {
+            background: linear-gradient(to bottom, #000000,#000000,#DD0000,#DD0000, #FFCC00,#FFCC00);
+        }
+
+        .main-timeline .timeline:nth-child(4n+12):after {
+            background-color: black;
+        }
+
+        /*DIA 12*/
+        .main-timeline .timeline:nth-child(4n+13):before {
+            background: linear-gradient(to bottom, #000000,#000000,#DD0000,#DD0000, #FFCC00,#FFCC00);
+        }
+
+        .main-timeline .timeline:nth-child(4n+13):after {
+            background-color: black;
+        }
+
+        /*DIA 13*/
+        .main-timeline .timeline:nth-child(4n+14):before {
+            background: linear-gradient(146deg, #11457E 25%, transparent 15%) 0 -37px, linear-gradient(34deg, #11457E 25%, transparent 15%) 0 -37px, linear-gradient(to bottom, white 50%, #D7141A 50%);
+        }
+
+        .main-timeline .timeline:nth-child(4n+14):after {
+            background-color: black;
+        }
+
+        /*DIA 14*/
+        .main-timeline .timeline:nth-child(4n+15):before {
+            background: linear-gradient(146deg, #11457E 25%, transparent 15%) 0 -37px, linear-gradient(34deg, #11457E 25%, transparent 15%) 0 -37px, linear-gradient(to bottom, white 50%, #D7141A 50%);
+        }
+
+        .main-timeline .timeline:nth-child(4n+15):after {
+            background-color: black;
+        }
+
+        /*DIA 15*/
+        .main-timeline .timeline:nth-child(4n+16):before {
+            background: linear-gradient(to bottom, #000000,#000000,#DD0000,#DD0000, #FFCC00,#FFCC00);
+        }
+
+        .main-timeline .timeline:nth-child(4n+16):after {
+            background-color: black;
+        }
 
         @media screen and (max-width:767px) {
             .main-timeline .timeline,
@@ -319,7 +402,7 @@
         <div class="row text-center">
             <h1 id="titulo-eurotrip" style="text-shadow: 2px 2px #128ba6; color:white; margin-top:40px;"><b>FAMILY EUROTRIP</b></h1>
             <h4 id="subtitulo-eurotrip" style="text-shadow: 2px 2px white; color:black"><b>Cronograma de viaje</b></h4>
-        </div>        
+        </div>
     </div>
     <div id="box-under-header"></div>
     <div class="demo">
@@ -384,7 +467,7 @@
                                     > La Sorbona <br />
                                     > Barrio Latino <br />
                                     > La Bastilla <br />
-                                </p>                              
+                                </p>
                                 <div id="paris-2" style="margin-top:15px; margin-right:15px; text-align:right;">
                                     <i class="fa-solid fa-location-dot"></i><p style="display:inline; margin-left:8px">Par&iacute;s, Francia</p>
                                 </div>
@@ -403,7 +486,7 @@
                                     > Plaza du Tertre. <br />
                                     > Sacro Cour-Moulin Rouge.
                                 </p>
-                                <div id="paris-3" style="margin-top:15px; margin-right:15px; text-align:right;">
+                                <div id="paris-3" style="margin-top:15px; margin-left:15px; text-align:left;">
                                     <i class="fa-solid fa-location-dot"></i><p style="display:inline; margin-left:8px">Par&iacute;s, Francia</p>
                                 </div>
                             </a>
@@ -427,9 +510,13 @@
                             <a href="#" class="timeline-content" style="padding-bottom:30px">
                                 <h3 class="title-belgica">D&#205;A 5 <br /> <sub>10 de agosto</sub></h3>
                                 <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                                    > Lugar 1 <br />
+                                    > Lugar 2 <br />
+                                    > Lugar 3 <br />
+                                    > Lugar 4 <br />
+                                    > Lugar 5
                                 </p>
-                                <div id="belgica-5" style="margin-top:15px; margin-right:15px; text-align:left;">
+                                <div id="belgica-5" style="margin-top:15px; margin-left:15px; text-align:left;">
                                     <i class="fa-solid fa-location-dot"></i><p style="display:inline; margin-left:8px">Bruselas, B&eacute;lgica</p>
                                 </div>
                             </a>
@@ -438,7 +525,11 @@
                             <a href="#" class="timeline-content" style="padding-bottom:30px">
                                 <h3 class="title-belgica">D&#205;A 6 <br /> <sub>11 de agosto</sub></h3>
                                 <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                                    > Lugar 1 <br />
+                                    > Lugar 2 <br />
+                                    > Lugar 3 <br />
+                                    > Lugar 4 <br />
+                                    > Lugar 5
                                 </p>
                                 <div id="belgica-6" style="margin-top:15px; margin-right:15px; text-align:right;">
                                     <i class="fa-solid fa-location-dot"></i><p style="display:inline; margin-left:8px">Brujas, B&eacute;lgica</p>
@@ -449,10 +540,134 @@
                             <a href="#" class="timeline-content" style="padding-bottom:30px">
                                 <h3 class="title-holanda">D&#205;A 7 <br /> <sub>12 de agosto</sub></h3>
                                 <p class="description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer males uada tellus lorem, et condimentum neque commodo Integer males uada tellus lorem, et condimentum neque commodo
+                                    > Lugar 1 <br />
+                                    > Lugar 2 <br />
+                                    > Lugar 3 <br />
+                                    > Lugar 4 <br />
+                                    > Lugar 5
                                 </p>
-                                <div id="holanda-7" style="margin-top:15px; margin-right:15px; text-align:left;">
+                                <div id="holanda-7" style="margin-top:15px; margin-left:15px; text-align:left;">
                                     <i class="fa-solid fa-location-dot"></i><p style="display:inline; margin-left:8px">	&Aacute;msterdam, Holanda</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="#" class="timeline-content" style="padding-bottom:30px">
+                                <h3 class="title-holanda">D&#205;A 8 <br /> <sub>13 de agosto</sub></h3>
+                                <p class="description">
+                                    > Lugar 1 <br />
+                                    > Lugar 2 <br />
+                                    > Lugar 3 <br />
+                                    > Lugar 4 <br />
+                                    > Lugar 5
+                                </p>
+                                <div id="holanda-8" style="margin-top:15px; margin-right:15px; text-align:right;">
+                                    <i class="fa-solid fa-location-dot"></i><p style="display:inline; margin-left:8px">	&Aacute;msterdam, Holanda</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="#" class="timeline-content" style="padding-bottom:30px">
+                                <h3 class="title-alemania">D&#205;A 9 <br /> <sub>14 de agosto</sub></h3>
+                                <p class="description">
+                                    > Lugar 1 <br />
+                                    > Lugar 2 <br />
+                                    > Lugar 3 <br />
+                                    > Lugar 4 <br />
+                                    > Lugar 5
+                                </p>
+                                <div id="alemania-9" style="margin-top:15px; margin-left:15px; text-align:left;">
+                                    <i class="fa-solid fa-location-dot"></i><p style="display:inline; margin-left:8px">	Hamburgo, Alemania</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="#" class="timeline-content" style="padding-bottom:30px">
+                                <h3 class="title-alemania">D&#205;A 10 <br /> <sub>15 de agosto</sub></h3>
+                                <p class="description">
+                                    > Lugar 1 <br />
+                                    > Lugar 2 <br />
+                                    > Lugar 3 <br />
+                                    > Lugar 4 <br />
+                                    > Lugar 5
+                                </p>
+                                <div id="alemania-10" style="margin-top:15px; margin-right:15px; text-align:right;">
+                                    <i class="fa-solid fa-location-dot"></i><p style="display:inline; margin-left:8px">	Hamburgo, Alemania</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="#" class="timeline-content" style="padding-bottom:30px">
+                                <h3 class="title-alemania">D&#205;A 11 <br /> <sub>16 de agosto</sub></h3>
+                                <p class="description">
+                                    > Lugar 1 <br />
+                                    > Lugar 2 <br />
+                                    > Lugar 3 <br />
+                                    > Lugar 4 <br />
+                                    > Lugar 5
+                                </p>
+                                <div id="alemania-11" style="margin-top:15px; margin-left:15px; text-align:left;">
+                                    <i class="fa-solid fa-location-dot"></i><p style="display:inline; margin-left:8px">	Berl&#205;n, Alemania</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="#" class="timeline-content" style="padding-bottom:30px">
+                                <h3 class="title-alemania">D&#205;A 12 <br /> <sub>17 de agosto</sub></h3>
+                                <p class="description">
+                                    > Lugar 1 <br />
+                                    > Lugar 2 <br />
+                                    > Lugar 3 <br />
+                                    > Lugar 4 <br />
+                                    > Lugar 5
+                                </p>
+                                <div id="alemania-12" style="margin-top:15px; margin-right:15px; text-align:right;">
+                                    <i class="fa-solid fa-location-dot"></i><p style="display:inline; margin-left:8px">	Berl&#205;n, Alemania</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="#" class="timeline-content" style="padding-bottom:30px">
+                                <h3 class="title-repcheca">D&#205;A 13 <br /> <sub>18 de agosto</sub></h3>
+                                <p class="description">
+                                    > Lugar 1 <br />
+                                    > Lugar 2 <br />
+                                    > Lugar 3 <br />
+                                    > Lugar 4 <br />
+                                    > Lugar 5
+                                </p>
+                                <div id="repcheca-13" style="margin-top:15px; margin-left:15px; text-align:left;">
+                                    <i class="fa-solid fa-location-dot"></i><p style="display:inline; margin-left:8px">	Praga, Rep&#250;blica Checa</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="#" class="timeline-content" style="padding-bottom:30px">
+                                <h3 class="title-repcheca">D&#205;A 14 <br /> <sub>19 de agosto</sub></h3>
+                                <p class="description">
+                                    > Lugar 1 <br />
+                                    > Lugar 2 <br />
+                                    > Lugar 3 <br />
+                                    > Lugar 4 <br />
+                                    > Lugar 5
+                                </p>
+                                <div id="repcheca-14" style="margin-top:15px; margin-right:15px; text-align:right;">
+                                    <i class="fa-solid fa-location-dot"></i><p style="display:inline; margin-left:8px">	Praga, Rep&#250;blica Checa</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="#" class="timeline-content" style="padding-bottom:30px">
+                                <h3 class="title-alemania">D&#205;A 15 <br /> <sub>20 de agosto</sub></h3>
+                                <p class="description">
+                                    > Lugar 1 <br />
+                                    > Lugar 2 <br />
+                                    > Lugar 3 <br />
+                                    > Lugar 4 <br />
+                                    > Lugar 5
+                                </p>
+                                <div id="alemania-15" style="margin-top:15px; margin-left:15px; text-align:left;">
+                                    <i class="fa-solid fa-location-dot"></i><p style="display:inline; margin-left:8px">	Frankfurt, Alemania</p>
                                 </div>
                             </a>
                         </div>
@@ -461,7 +676,7 @@
             </div>
         </div>
     </div>
-</body>  
+</body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
     $("#tarjeta-inicio").removeClass('timeline');
@@ -487,6 +702,22 @@
         $('#belgica-6').css({ 'text-align': 'left' });
         $('#holanda-7').css({ 'margin-left': '15px' });
         $('#holanda-7').css({ 'text-align': 'left' });
+        $('#holanda-8').css({ 'margin-left': '15px' });
+        $('#holanda-8').css({ 'text-align': 'left' });
+        $('#alemania-9').css({ 'margin-left': '15px' });
+        $('#alemania-9').css({ 'text-align': 'left' });
+        $('#alemania-10').css({ 'margin-left': '15px' });
+        $('#alemania-10').css({ 'text-align': 'left' });
+        $('#alemania-11').css({ 'margin-left': '15px' });
+        $('#alemania-11').css({ 'text-align': 'left' });
+        $('#alemania-12').css({ 'margin-left': '15px' });
+        $('#alemania-12').css({ 'text-align': 'left' });
+        $('#repcheca-13').css({ 'margin-left': '15px' });
+        $('#repcheca-13').css({ 'text-align': 'left' });
+        $('#repcheca-14').css({ 'margin-left': '15px' });
+        $('#repcheca-14').css({ 'text-align': 'left' });
+        $('#alemania-15').css({ 'margin-left': '15px' });
+        $('#alemania-15').css({ 'text-align': 'left' });
     } else {
         $('#header').removeClass('bgmobile').addClass('bgdesktop');
     }
