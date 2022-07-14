@@ -158,6 +158,7 @@
             padding: 12px;
             margin: 0 0 5px;
         }
+
         .main-timeline .title-repcheca {
             color: black;
             background: linear-gradient(146deg, #11457E 25%, transparent 15%) 0 -35px, linear-gradient(34deg, #11457E 25%, transparent 15%) 0 -35px, linear-gradient(to bottom, white 50%, #D7141A 50%);
@@ -416,9 +417,34 @@
                                 <h3 class="title-alemania">INICIO <br /><sub>5 de agosto</sub></h3>
                                 <div style="text-align:center; padding:13px">
                                     <i class="fa-solid fa-plane-departure"></i>
-                                    <p class="description" style="text-align:center; display:inline">
+                                    <p class="description" style="text-align:center; display:inline;">
                                         PARTIMOS DESDE FRANKFURT, ALEMANIA
-                                    </p>
+                                    </p> <br /> <br />
+                                    <i class="fa-solid fa-train"><span style="margin-right:15px; margin-left:15px">Billetes</span></i><i class="fa-solid fa-train"></i><br />
+                                    <div style="display:inline-block; cursor:pointer; background:linear-gradient(to right, #0072BB,#0072BB,#fff,#fff, #ED2939,#ED2939); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
+                                        <i class="fa-solid fa-ticket">  FRA - PAR</i>
+                                    </div>
+                                    <div style="display:inline-block; cursor:pointer; background: linear-gradient(to right, black,black,#FDDA24,#FDDA24,#EF3340, #EF3340); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
+                                        <i class="fa-solid fa-ticket" style="color:white">  <span style="color:white">PAR - BRU</span> </i>
+                                    </div>
+                                    <div style="display:inline-block; cursor:pointer; background: linear-gradient(to bottom, #C8102E,#C8102E, #FFF, #FFF, #324CA4,#324CA4); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
+                                        <i class="fa-solid fa-ticket">  BRU - AMS</i>
+                                    </div>
+                                    <div style="display:inline-block; cursor:pointer; background: linear-gradient(to bottom, #000000,#000000,#DD0000,#DD0000, #FFCC00,#FFCC00); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
+                                        <i class="fa-solid fa-ticket" style="color:white">  <span style="color:white">AMS - HAM</span> </i>
+                                    </div>
+
+                                    <!--<a href="./Tickets-HAM-BER.pdf" download="HAM-BER"></a>-->
+                                    <div id="tik-ham-ber" style="display:inline-block; cursor:pointer; background: linear-gradient(to bottom, #000000,#000000,#DD0000,#DD0000, #FFCC00,#FFCC00); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
+                                        <i class="fa-solid fa-ticket" style="color:white"><span style="color:white">HAM - BER</span> </i>
+                                    </div>
+                                    
+                                    <div style="display:inline-block; cursor:pointer; background: linear-gradient(146deg, #11457E 25%, transparent 15%) 0 -20px, linear-gradient(34deg, #11457E 25%, transparent 15%) 0 -20px, linear-gradient(to bottom, white 50%, #D7141A 50%); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
+                                        <i class="fa-solid fa-ticket">  BER - PRA</i>
+                                    </div>
+                                    <div style="display:inline-block; cursor:pointer; background: linear-gradient(to bottom, #000000,#000000,#DD0000,#DD0000, #FFCC00,#FFCC00); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
+                                        <i class="fa-solid fa-ticket" style="color:white">  <span style="color:white">PRA - FRA</span> </i>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -679,6 +705,9 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
+    $("#tik-ham-ber").click(function(){
+        window.location = "./Tickets-HAM-BER.pdf" 
+    });
     $("#tarjeta-inicio").removeClass('timeline');
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
         $('#header').removeClass('bgdesktop').addClass('bgmobile');
