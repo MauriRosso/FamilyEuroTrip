@@ -421,16 +421,16 @@
                                         PARTIMOS DESDE FRANKFURT, ALEMANIA
                                     </p> <br /> <br />
                                     <i class="fa-solid fa-train"><span style="margin-right:15px; margin-left:15px">Billetes</span></i><i class="fa-solid fa-train"></i><br />
-                                    <div style="display:inline-block; cursor:pointer; background:linear-gradient(to right, #0072BB,#0072BB,#fff,#fff, #ED2939,#ED2939); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
+                                    <div id="tik-fra-par" style="display:inline-block; cursor:pointer; background:linear-gradient(to right, #0072BB,#0072BB,#fff,#fff, #ED2939,#ED2939); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
                                         <i class="fa-solid fa-ticket">  FRA - PAR</i>
                                     </div>
-                                    <div style="display:inline-block; cursor:pointer; background: linear-gradient(to right, black,black,#FDDA24,#FDDA24,#EF3340, #EF3340); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
+                                    <div id="tik-par-bru" style="display:inline-block; cursor:pointer; background: linear-gradient(to right, black,black,#FDDA24,#FDDA24,#EF3340, #EF3340); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
                                         <i class="fa-solid fa-ticket" style="color:white">  <span style="color:white">PAR - BRU</span> </i>
                                     </div>
-                                    <div style="display:inline-block; cursor:pointer; background: linear-gradient(to bottom, #C8102E,#C8102E, #FFF, #FFF, #324CA4,#324CA4); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
+                                    <div id="tik-bru-ams" style="display:inline-block; cursor:pointer; background: linear-gradient(to bottom, #C8102E,#C8102E, #FFF, #FFF, #324CA4,#324CA4); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
                                         <i class="fa-solid fa-ticket">  BRU - AMS</i>
                                     </div>
-                                    <div style="display:inline-block; cursor:pointer; background: linear-gradient(to bottom, #000000,#000000,#DD0000,#DD0000, #FFCC00,#FFCC00); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
+                                    <div id="tik-ams-ham" style="display:inline-block; cursor:pointer; background: linear-gradient(to bottom, #000000,#000000,#DD0000,#DD0000, #FFCC00,#FFCC00); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
                                         <i class="fa-solid fa-ticket" style="color:white">  <span style="color:white">AMS - HAM</span> </i>
                                     </div>
 
@@ -439,10 +439,10 @@
                                         <i class="fa-solid fa-ticket" style="color:white"><span style="color:white">HAM - BER</span> </i>
                                     </div>
                                     
-                                    <div style="display:inline-block; cursor:pointer; background: linear-gradient(146deg, #11457E 25%, transparent 15%) 0 -20px, linear-gradient(34deg, #11457E 25%, transparent 15%) 0 -20px, linear-gradient(to bottom, white 50%, #D7141A 50%); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
+                                    <div id="tik-ber-pra" style="display:inline-block; cursor:pointer; background: linear-gradient(146deg, #11457E 25%, transparent 15%) 0 -20px, linear-gradient(34deg, #11457E 25%, transparent 15%) 0 -20px, linear-gradient(to bottom, white 50%, #D7141A 50%); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
                                         <i class="fa-solid fa-ticket">  BER - PRA</i>
                                     </div>
-                                    <div style="display:inline-block; cursor:pointer; background: linear-gradient(to bottom, #000000,#000000,#DD0000,#DD0000, #FFCC00,#FFCC00); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
+                                    <div id="tik-pra-fra" style="display:inline-block; cursor:pointer; background: linear-gradient(to bottom, #000000,#000000,#DD0000,#DD0000, #FFCC00,#FFCC00); border-radius:12px; border-color:black; border:2px solid black; padding:10px; margin-top:12px">
                                         <i class="fa-solid fa-ticket" style="color:white">  <span style="color:white">PRA - FRA</span> </i>
                                     </div>
                                 </div>
@@ -705,8 +705,26 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
-    $("#tik-ham-ber").click(function(){
-        window.location = "./Tickets-HAM-BER.pdf" 
+    $("#tik-fra-par").click(function () {
+        alert("¡FRANCO LOS LLEVA EN PAPEL!")
+    });
+    $("#tik-par-bru").click(function () {
+        window.location = "./Tickets-PAR-BRU.jpg"
+    });
+    $("#tik-bru-ams").click(function () {
+        window.location = "./Tickets-BRU-AMS.pdf"
+    });
+    $("#tik-ams-ham").click(function () {
+        window.location = "./Tickets-AMS-HAM.pdf"
+    });
+    $("#tik-ham-ber").click(function () {
+        window.location = "./Tickets-HAM-BER.pdf"
+    });
+    $("#tik-ber-pra").click(function () {
+        window.location = "./Tickets-BER-PRA.pdf"
+    });
+    $("#tik-pra-fra").click(function () {
+        window.location = "./Tickets-PRA-FRA.pdf"
     });
     $("#tarjeta-inicio").removeClass('timeline');
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
